@@ -25,11 +25,11 @@
                     <a class="nav-link" href="{{ url('/business-unit')}}" id="navbarDropdown" aria-haspopup="true"
                         aria-expanded="false">Unit Usaha</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="{{ url('/business-unit/sidoagung-agro-prima')}}">PT. Sido Agung Agro Prima</a></li>
+                        <!-- <li><a class="dropdown-item" href="{{ url('/business-unit/sidoagung-agro-prima')}}">PT. Sido Agung Agro Prima</a></li> -->
                         <li><a class="dropdown-item" href="{{ url('/business-unit/sidoagung-farm')}}">PT. Sido Agung Farm</a></li>
                         <li><a class="dropdown-item" href="{{ url('/business-unit/sidosari-multi-farm')}}">PT. Sido Sari Multifarm</a></li>
-                        <li><a class="dropdown-item" href="{{ url('/business-unit/asia-pangan-utama')}}">PT. Asia Pangan Utama</a></li>
-                        {{-- <li><a class="dropdown-item" href="{{ url('/business-unit/sidoagung-food')}}">Sidoagung Foods Processing</a></li> --}}
+                        <!-- <li><a class="dropdown-item" href="{{ url('/business-unit/asia-pangan-utama')}}">PT. Asia Pangan Utama</a></li> -->
+                        <!-- <li><a class="dropdown-item" href="{{ url('/business-unit/sidoagung-food')}}">Sidoagung Foods Processing</a></li> -->
                     </ul>
                 </li>
                 <li class="nav-item dropdown ">

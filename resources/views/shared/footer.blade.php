@@ -39,11 +39,11 @@
                 <div class="footer-link">
                 <ul class="list-unstyled mb-0">
                     <li><a href="{{url('/business-unit')}}">Summary</a></li>
-                    <li><a href="{{url('/business-unit/sidoagung-agro-prima')}}">PT. Sido Agung Agro Prima</a></li>
+                    <!-- <li><a href="{{url('/business-unit/sidoagung-agro-prima')}}">PT. Sido Agung Agro Prima</a></li> -->
                     <li><a href="{{url('/business-unit/sidoagung-farm')}}">PT. Sido Agung Farm</a></li>
                     <li><a href="{{url('/business-unit/sidosari-multi-farm')}}">PT. Sido Sari Multifarm</a></li>
-                    <li><a href="{{url('/business-unit/asia-pangan-utama')}}">PT. Asia Pangan Utama</a></li>
-                    {{-- <li><a href="{{url('/business-unit/sidoagung-food')}}">Sidoagung Foods Processing</a></li> --}}
+                    <!-- <li><a href="{{url('/business-unit/asia-pangan-utama')}}">PT. Asia Pangan Utama</a></li> -->
+                    <!-- <li><a href="{{url('/business-unit/sidoagung-food')}}">Sidoagung Foods Processing</a></li> -->
                 </ul>
                 </div>
             </div>

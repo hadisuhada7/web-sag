@@ -21,7 +21,8 @@
                             Tengah. Memiliki Kapasitas Produksi 20.000 ton/bulan, Dengan Demikian Total Kapasitas Produksi
                             Pakan Group Usaha Menjadi Lebih Dari 35.000 ton/bulan.
                         </p>
-                        <a href="#!" class="btn btn-block btn-primary" style="background: #a6ce39">Kunjungi</a>
+                        <a href="https://www.sidoagungfarm.com/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-block btn-primary" style="background: #a6ce39">Kunjungi</a>
                     </div>
                 </div>
             </div>
