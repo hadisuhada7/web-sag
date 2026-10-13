@@ -9,7 +9,8 @@ use App\Http\Controllers\{
     GovernanceController,
     CsrController,
     WeController,
-    UnitOfWorkController
+    UnitOfWorkController,
+    FileStorageController
 };
 
 use App\Http\Controllers\Admin\{
@@ -18,7 +19,8 @@ use App\Http\Controllers\Admin\{
     HomeController,
     AdminProductController,
     CareerController,
-    ManagementController
+    ManagementController,
+    ApkFileController
 };
 
 use App\Http\Controllers\Admin\Investor\{
@@ -144,6 +146,12 @@ Route::controller(MainController::class)->name("main")->group(function (){
     Route::prefix("data")->group(function(){
         Route::get("/testimoni", "testimoni");
     });
+});
+
+// File Storage (APK) - halaman publik tanpa menu di header.
+Route::controller(FileStorageController::class)->name("file-storage")->prefix("file-storage")->group(function (){
+    Route::get('/', 'index');
+    Route::get('/download/{id}', 'download')->whereNumber('id')->name(".download");
 });
 
 Route::prefix("wongelek")->group(function (){
@@ -300,7 +308,16 @@ Route::prefix("wongelek")->group(function (){
             Route::post("/save", "save");
             Route::get("/delete/{id}", "delete");
         });
-        
+
+        // File Storage (APK). Aksi yang mengubah data memakai POST (terlindungi CSRF).
+        Route::controller(ApkFileController::class)->prefix("file-storage")->name(".file-storage")->group(function(){
+            Route::get("/", "list");
+            Route::get("/get/{id}", "get");
+            Route::post("/save", "save");
+            Route::post("/publish/{id}", "publish");
+            Route::post("/remove/{id}", "remove");
+        });
+
     });   
 
     
