@@ -125,6 +125,11 @@
                            'childs' => []
                         ],
                         [
+                           'url' => url($base . '/file-storage'),
+                           'title'  => "File Storage",
+                           'childs' => []
+                        ],
+                        [
                            'url' => "",
                            'title'  => "Feedback",
                            'childs' => [
