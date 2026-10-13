@@ -70,15 +70,15 @@
                      <div class="circle-text"></div>
                      <div class="pl-5 pb-5 pt-5 ">
                          <h5 class="text-primary mb-2">Sido Agung Group</h5>
-                         {{-- <p class="mb-2">Ruko Garden Shopping Arcade Madison Park Unit 9CE, Central Park, Jln. LetJend. S. Parman, Tanjung Duren Selatan, Grogol, Jakarta Barat 11470</p>--}}
-						 <p>JLN. AIP KS TUBUN IIC NO.30, SLIPI, PALMERAH, JAKARTA BARAT 11410</p>
+                         <!-- <p class="mb-2">Ruko Garden Shopping Arcade Madison Park Unit 9CE, Central Park, Jln. LetJend. S. Parman, Tanjung Duren Selatan, Grogol, Jakarta Barat 11470</p> -->
+						 <p>Jl. AIP KS Tubun IIC NO.30, Slipi, Palmerah, Jakarta Barat 11410</p>
                          <p class="mb-0">
 							<a class="contactus-text" href="tel:+6282125998700"><i class="fas fa-fax"></i> 0821-2599-8700</a> 
                          </p>
                      </div>
                  </div>
 
-                    <div class="col-md-12 bg-white border-radius mt-3">
+                    <!-- <div class="col-md-12 bg-white border-radius mt-3">
                         <div class="circle-text"></div>
                         <div class="pl-5 pb-5 pt-5 ">
                             <h5 class="text-primary mb-2">PT. Sido Agung Agro Prima</h5>
@@ -90,7 +90,7 @@
 								<a class="contactus-text" href="tel:+6282125998700"><i class="fas fa-fax"></i> 0821-2599-8700</a> 
 							 </p>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="col-md-12 bg-white border-radius mt-3">
                         <div class="circle-text"></div>
@@ -117,7 +117,7 @@
                         </div>
                      </div>
                      
-                     <div class="col-md-12 bg-white border-radius mt-3">
+                     <!-- <div class="col-md-12 bg-white border-radius mt-3">
                         <div class="circle-text"></div>
                         <div class="pl-5 pb-5 pt-5 ">
                            <h5 class="text-primary mb-2">PT. Asia Pangan Utama</h5> 
@@ -126,9 +126,9 @@
 								<a class="contactus-text" href="tel:+6282125998700"><i class="fas fa-fax"></i> 0821-2599-8700</a> 
 							 </p>
                         </div>
-                     </div>
+                     </div> -->
 
-                     {{-- <div class="col-md-12 bg-white border-radius mt-3">
+                     <!-- <div class="col-md-12 bg-white border-radius mt-3">
                         <div class="circle-text"></div>
                         <div class="pl-5 pb-5 pt-5 ">
                            <h5 class="text-primary mb-2">PT. Sidoagung Foods Processing</h5>
@@ -137,7 +137,7 @@
                               <a class="contactus-text" href="tel:+6281221725758"><i class="fas fa-fax"></i> 0812-2172-5758</a>
                             </p>
                         </div>
-                     </div> --}}
+                     </div> -->
                 </div>
             </div>
         </div>
