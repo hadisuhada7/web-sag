@@ -23,8 +23,8 @@ class ApkFile extends Model
     }
 
     /**
-     * Ukuran file dalam format yang mudah dibaca (mis. "24.5 MB").
-     */
+    * File size in a human-readable format (e.g., "24.5 MB"). 
+    */
     public function getReadableSizeAttribute()
     {
         $bytes = (int) $this->file_size;

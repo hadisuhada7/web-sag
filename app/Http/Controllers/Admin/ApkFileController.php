@@ -11,11 +11,11 @@ use Illuminate\Support\Str;
 
 class ApkFileController extends Controller
 {
-    // Batas ukuran upload: 100 MB (dalam KB, sesuai aturan "max" Laravel).
+    // Upload size limit: 100 MB (in KB, following Laravel's "max" rule).
     const MAX_SIZE_KB = 102400;
 
-    // File APK disimpan di storage/app/apk (tidak bisa diakses langsung dari web,
-    // hanya lewat route download publik).
+    // The APK file is stored in storage/app/apk (not directly accessible from the web,
+    // only via the public download route).
     const DIR = 'apk';
 
     public function list()
@@ -79,7 +79,7 @@ class ApkFileController extends Controller
 
         $file = $request->file('apk');
 
-        // File wajib diisi saat tambah baru; saat edit boleh dikosongkan (file lama dipakai).
+        // The file is mandatory when adding a new entry; it can be left blank when editing (the existing file will be used).
         if (!$apk && !$file) {
             return $this->fail("File APK wajib diupload. (Jika sudah dipilih, ukuran mungkin melebihi batas server.)");
         }
@@ -106,8 +106,8 @@ class ApkFileController extends Controller
                 return $this->fail("Ukuran file maksimal 100 MB.");
             }
 
-            // APK adalah arsip ZIP; periksa signature "PK\x03\x04" supaya file lain
-            // yang hanya diganti namanya menjadi .apk tidak ikut lolos.
+            // An APK is a ZIP archive; check for the "PK\x03\x04" signature so that other files
+            // merely renamed to .apk do not pass the check.
             $handle = fopen($file->getRealPath(), 'rb');
             $magic = $handle ? fread($handle, 4) : '';
             if ($handle) {
@@ -199,8 +199,8 @@ class ApkFileController extends Controller
     }
 
     /**
-     * Nama file untuk header download: hanya karakter aman, selalu berakhiran .apk.
-     */
+    * Filename for the download header: safe characters only, always ends with .apk. 
+    */
     private function safeFileName($name)
     {
         $base = pathinfo($name, PATHINFO_FILENAME);

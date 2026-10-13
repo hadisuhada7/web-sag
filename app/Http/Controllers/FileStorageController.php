@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Storage;
 class FileStorageController extends Controller
 {
     /**
-     * Halaman publik: tabel daftar APK yang sudah dipublish.
-     */
+    * Public page: table listing published APKs. 
+    */
     public function index()
     {
         return view("filestorage.index", [
@@ -21,9 +21,9 @@ class FileStorageController extends Controller
     }
 
     /**
-     * Download APK. File disimpan di luar folder public, jadi selalu lewat route ini.
-     * Hanya data yang berstatus publish yang bisa diunduh.
-     */
+    * Download APK. The file is stored outside the public folder, so access is always routed through this endpoint. 
+    * Only data with a 'published' status can be downloaded. 
+    */
     public function download($id)
     {
         $apk = ApkFile::published()->where('id', $id)->first();
