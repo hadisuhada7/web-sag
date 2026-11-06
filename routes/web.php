@@ -60,11 +60,11 @@ Route::controller(AboutController::class)->name("about-us")->prefix("about-us")-
 Route::controller(UnitOfWorkController::class)->name("uow")->prefix("business-unit")->group(function(){
     Route::redirect('/', '/business-unit/summary');
     Route::get('/summary', 'summary');
-    Route::get('/sidoagung-agro-prima', 'agroprima');
+    // Route::get('/sidoagung-agro-prima', 'agroprima');
     Route::get('/sidoagung-farm', 'farm');
     Route::get('/sidosari-multi-farm', 'sidosari');
-    Route::get('/asia-pangan-utama', 'asiapangan');
-    Route::get('/sidoagung-food', 'food');
+    // Route::get('/asia-pangan-utama', 'asiapangan');
+    // Route::get('/sidoagung-food', 'food');
 });
 
 Route::controller(ProductController::class)->name("products")->prefix("products")->group(function(){
@@ -369,4 +369,3 @@ Route::get("/download-pip/{filename}", function($filename){
 	abort(404, 'File not found');
 		
 });
-

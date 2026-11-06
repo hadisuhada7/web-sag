@@ -20,6 +20,7 @@
         </div>
     </section>
 
+    {{-- PT. Sido Agung Agro Prima
     <section class="space-pt ">
         <div class="container">
             <div class="row align-items-center">
@@ -43,6 +44,8 @@
             </div>
         </div>
     </section>
+    --}}
+
     <section class="space-pt  ">
         <div class="container ">
             <div class="row align-items-center">
@@ -89,6 +92,7 @@
         </div>
     </section>
 
+    {{-- PT. Asia Pangan Utama
     <section class="space-pt  ">
         <div class="container ">
             <div class="row align-items-center">
@@ -111,4 +115,5 @@
             </div>
         </div>
     </section>
+    --}}
 @endsection

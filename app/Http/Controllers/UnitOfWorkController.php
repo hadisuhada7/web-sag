@@ -11,10 +11,10 @@ class UnitOfWorkController extends Controller
         return view("uow.summary");
     }
 
-    public function agroprima()
-    {
-        return view("uow.agroprima");
-    }
+    // public function agroprima()
+    // {
+    //     return view("uow.agroprima");
+    // }
 
     public function farm()
     {
@@ -26,13 +26,13 @@ class UnitOfWorkController extends Controller
         return view("uow.sidosari");
     }
 
-    public function asiapangan()
-    {
-        return view("uow.asiapangan");
-    }
+    // public function asiapangan()
+    // {
+    //     return view("uow.asiapangan");
+    // }
 
-    public function food()
-    {
-        return view("uow.foods");
-    }
+    // public function food()
+    // {
+    //     return view("uow.foods");
+    // }
 }
